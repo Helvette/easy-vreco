@@ -9,27 +9,44 @@
 	<link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-	<div class="row up-bar">
-		<div class="origin col-lg-5">
-			<input type="text" id="punto-partida">
+	<!-- aside -->
+	<div class="up-bar col-md-4 for-float col-12">
+		<!-- logo -->
+		<div class="logo text-center col-md-12">
+			<img src="assets/img/logo.png" alt="">
 		</div>
-		<div class="destination col-lg-5">
-			<input type="text" id="punto-destino">
-		</div>
-		<div class="find-btn col-lg-2">
-			<button class="ruta btn btn-light" id="trazar-ruta">Trazar Ruta</button>
-			<button class="find-me btn btn-light">Encuéntrame</button>
-		</div>
+		<ul class="col-md-12">
+			<li>
+				<span class="col-1"><i class="fas fa-map-marker"></i></span>
+				<input type="text" id="punto-partida" class="col-md-11 col-11" placeholder="Introduce un Punto de Partida">
+			</li>
+			<li>
+				<span class="col-1"><i class="fas fa-map-marker-alt"></i></span>
+				<input type="text" id="punto-destino" class="col-11" placeholder="Introduce un Punto de Destino">
+			</li>
+			<!-- botones -->
+			<li class="btn-start">
+				<button class="ruta btn col-md-12" id="trazar-ruta">Trazar Ruta</button>
+			</li>
+			<li>
+				<button class="find-me btn col-md-12">Encuéntrame</button>
+			</li>
+		</ul>
 	</div>
-	<div id="map" class="row">
+
+<!-- mapa -->
+	<div id="map" class=" col-md-8 for-float col-12">
 		
 	</div>
 
 
-	<!-- script -->
+	<!-- api google maps -->
 	<script async defer
-					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl2ouIDdblGAHn0I8QneI6hPIy6PKyFVY&callback=initMap&libraries=places">
+					src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBl2ouIDdblGAHn0I8QneI6hPIy6PKyFVY&callback=initMap&libraries=places&">
 	</script>
+	<!-- mi script -->
 	<script src="assets/js/app.js"></script>
+	<!-- fontawesome -->
+	<script defer src="https://use.fontawesome.com/releases/v5.0.1/js/all.js"></script>
 </body>
 </html>
